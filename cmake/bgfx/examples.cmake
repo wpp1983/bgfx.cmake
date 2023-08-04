@@ -218,9 +218,7 @@ function(add_example ARG_NAME)
 		if(NOT BGFX_INSTALL_EXAMPLES)
 			set_property(TARGET example-${ARG_NAME} PROPERTY EXCLUDE_FROM_ALL ON)
 		endif()
-		target_link_libraries(example-${ARG_NAME} PUBLIC
-				example-common
-				game-activity::game-activity_static)
+		target_link_libraries(example-${ARG_NAME} PUBLIC example-common)
 		configure_debugging(example-${ARG_NAME} WORKING_DIR ${BGFX_DIR}/examples/runtime)
 		if(MSVC)
 			set_target_properties(example-${ARG_NAME} PROPERTIES LINK_FLAGS "/ENTRY:\"mainCRTStartup\"")
