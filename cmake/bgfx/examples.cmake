@@ -292,6 +292,7 @@ add_example(
 if(BGFX_BUILD_EXAMPLES)
 	# Add examples
 	set(BGFX_EXAMPLES
+		000-mobiletest
 		00-helloworld
 		01-cubes
 		02-metaballs

@@ -20,3 +20,4 @@ Makefile
 install*/
 cmake-build-*/
 cmake/bgfx/generated
+cmake-build
